@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador peliculas</title>
+    <script src="./peticiones.js"></script>
+    <link rel="stylesheet" href="./stilos.css">
+</head>
+<body>
+    <div id="hola">
+        <div id="clonar" class="contenedor" >
+            <div class="contenedor__img"><img src="" alt="Imagen No Disponible"></div>
+            <h2></h2>
+            <i></i>
+        </div>
+        <div id="clonarDatos" class="datosPelicula">
+            <button><img src="./boton-x.png"></button>
+            <div>
+                <div class="contenedor__img" class="imagenDatos"><img src="" alt="Imagen No Disponible"></div>
+                <div class="texto">
+                    <p id="director"></p>
+                    <p id="actores"></p>
+                    <p id="sinopsis"></p>
+                    <p id="año"></p>
+                </div>
+                
+            </div>
+        </div>
+        <div id="clonarInicio" class="inicio">
+            <h1>Films</h1>
+            <div>
+                <h3>Tus mejores Peliculas y Series</h3>
+                <h4>¡Bienvenido a Films!</h4>
+            </div>
+            
+            <p>Explora un mundo lleno de emociones con CineFlix, tu destino definitivo para disfrutar de las mejores películas y series. Sumérgete en un catálogo diverso que abarca desde clásicos atemporales hasta los últimos estrenos. Con una interfaz fácil de usar, CineFlix te brinda la libertad de explorar, descubrir y disfrutar de contenido emocionante desde la comodidad de tu hogar.</p>
+        </div>
+        <header>
+            <div class="logo"><img src="./pedazo_de_logo-removebg-preview.png"></div>
+            <input type="text" id="buscador" placeholder="Que desea buscar">
+            <div class="seleccionador">
+                <p id="inicio"><a>Inicio</a></p>
+                <p id="pelicula"><a>Peliculas</a></p>
+                <p id="series"><a>Series</a></p>
+            </div>
+        </header>
+        
+        <main id="peliculas" class="peliculas">
+            
+        </main> 
+    </div>
+    
+
+</body>
+</html>

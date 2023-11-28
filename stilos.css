@@ -1,0 +1,210 @@
+:root{
+    --negroMarron:rgb(12, 7, 5);
+    --marronOscuro:rgb(54,48,48);
+    --grisOscuro:rgb(96, 92, 78);
+    --beige:rgb(164, 153, 102);
+    --beigeClaro:rgb(199, 199, 166);
+    --BeigeSuperClaro:rgb(234, 255, 218)
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--BeigeSuperClaro);
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grisOscuro);
+}
+.peliculas{
+    position: relative;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#clonar,#clonarDatos{
+    display: none;
+}
+img{
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+}
+.contenedor{
+    border-radius: 5px;
+    background-color: var(--marronOscuro);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    width: 250px;
+    height: 40vh;
+    padding: 10px;
+}
+.contenedor:hover{
+    cursor: pointer;
+    transform: scale(1.01); /* Aumenta el tamaño en un 10% */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.contenedor__img{
+    
+    width: 100px;
+    height: 70%;
+    margin-bottom: 10px;
+}
+
+h2{
+    height: 30%;
+    width: 80%;
+    font-size:2vh;
+    
+}
+button{
+    width: 7% ;
+    height: 7% ;
+    background-color: transparent;
+    border: none;
+}
+button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.datosPelicula{
+    position:fixed;
+    border-radius: 10px;
+    top: 20%;
+    width: 80vh;
+    height: 70vh;
+    background-color: var(--negroMarron);
+    padding: 20px;
+}
+.datosPelicula>div{
+    width: 100%;
+    height: 93%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.datosPelicula>div>div>img{
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.308);
+}
+b{
+    color: var(--beige);
+    
+}
+p{
+    color: var(--BeigeSuperClaro);
+}
+#hola{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.datosPelicula .contenedor__img{
+    color: white;
+}
+.texto{
+    height: 40%;
+    width: 100%;
+    font-size: 90%;
+}
+
+header{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    background-color: var(--beige);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    z-index: 5;
+}
+.logo>img{
+    border-radius: 50%;
+}
+.logo{
+    
+    width: 20%;
+    height: 10vh;
+    width: 10vh;
+}
+input{
+    color: var(--grisOscuro);
+    width: 50%;
+    height: 30px;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--beigeClaro);
+}
+.seleccionador{
+    
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.seleccionador>p{
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(75, 72, 61);
+}
+.seleccionador>p:hover{
+    cursor: pointer;
+    color: var(--negroMarron);
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+main{
+    margin-top: 10%;
+    width: 100%;
+    height: 90%;
+}
+i{
+    font-size: smaller;
+}
+.inicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10%;
+    align-items: center;
+    height: 70vh;
+    width: 50%;
+    background-color: rgb(75, 72, 61);
+    padding: 20px;
+    border-radius: 10px;
+}
+p{
+    text-align: justify;
+}
+.inicio>div{
+    text-align: center;
+}
+h1{
+    font-size: 400%;
+}
+h3{
+    font-size: xx-large;
+}
+#clonarInicio{
+    display: none;
+}
