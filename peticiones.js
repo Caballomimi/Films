@@ -1,6 +1,6 @@
 var key= "bcfc0649";
-var urlNormal="http://www.omdbapi.com/?apikey="+key+"&s=";
-var urlDatosPelicula="http://www.omdbapi.com/?apikey="+key+"&i="
+var urlNormal="https://www.omdbapi.com/?apikey="+key+"&s=";
+var urlDatosPelicula="https://www.omdbapi.com/?apikey="+key+"&i="
 var contador=0;
 var pagina="&page="+contador
 tipo="&type="
